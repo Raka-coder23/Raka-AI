@@ -102,7 +102,7 @@ st.markdown("""
 # HEADER (Logo + Subtitle Centered)
 # =========================================================
 st.markdown('<div class="main-title">✨ Raka AI</div>', unsafe_allow_html=True)
-if st.session_state.mode == "chat":
+if st.session_state.mode != "chat":
     st.markdown('<div class="sub-title">Professional AI Conversation Experience</div>', unsafe_allow_html=True)
 else:
     st.markdown('<div class="sub-title">Generate Stunning AI Images</div>', unsafe_allow_html=True)
